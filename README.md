@@ -1,6 +1,13 @@
 # getting-and-cleaning-data-final-assignment
 This is the code and supporting documents for the Coursera Getting and Cleaning Data Final Assignment.
 
+run_analysis.R creates a tidy data set (tidy.txt) that is comprised of a summary (mean activity values by subject and activity type) 
+of select metrics from a study that collected activity data from 30 subjects that performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
+
+CodeBook.md decribes the data in more detail and describes what run_analysis.R does in more detail.
+
+**********************
+
 The full instructions for this assignment can be found here:
 https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project
 
@@ -13,3 +20,5 @@ Extracts only the measurements on the mean and standard deviation for each measu
 Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
