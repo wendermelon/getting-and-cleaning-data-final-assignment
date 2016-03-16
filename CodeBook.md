@@ -18,5 +18,5 @@ run_analysis.R does the following:
 3. associates the activity with the data
 4. associates the activity label with the activity
 5. brings train and test data together
-6. calculates an average of all the metric values for each subject and activity type as the final tidy data set
+6. calculates an average of each metric for each subject and activity type as the final tidy data set
 7. writes out the final tidy data set into a txt file
