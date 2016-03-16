@@ -100,10 +100,10 @@ alldatMelt <- melt(alldat2,id=c("Subject ID","Activity Description"),measure.var
 alldatMelt$"Subject ID" <- as.factor(alldatMelt$"Subject ID")
 
 #Step 21 - Create final tidy dataset by getting the average values by Subject ID and Activity Description
-tidy_dataset <- aggregate(alldatMelt$value, list(alldatMelt$"Subject ID", alldatMelt$"Activity Description"), mean)
+tidy_dataset <- aggregate(alldatMelt$value, list(alldatMelt$"Subject ID", alldatMelt$"Activity Description",alldatMelt$variable), mean)
 
 #Step 22 - Rename columns to be more descriptive
-names(tidy_dataset) <- c("Subject","Activity","Mean")
+names(tidy_dataset) <- c("Subject","Activity","Measurement","Mean")
 
 #Step 23 - Write table out
 write.table(tidy_dataset, "tidy.txt", row.names = FALSE, quote = FALSE)
